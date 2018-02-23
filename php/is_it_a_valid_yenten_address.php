@@ -45,4 +45,8 @@ if(!isYENTENvalid($addr))
 	echo '<span style="color:red;">'.$addr.' is <strong>not</strong> valid</span>';
 	exit;
 }
+else
+{
 	echo '<span style="color:green;"><strong>'.$addr.'</strong> is valid</span>';
+}
+
