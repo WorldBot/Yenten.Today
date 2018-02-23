@@ -13,19 +13,19 @@ function bDec($base58){
 	return $bdec;
 }
 function ecHex($dec){
-  $ch='0123456789ABCDEF';
-  $echex='';
-  while(bccomp($dec,0)==1)
-  {
-    $bdv=(string)bcdiv($dec,'16',0);
-    $bmd=(integer)bcmod($dec,'16',0);
-    $dec=$bdv;
-    $echex.=$ch[$bmd];
-  }
-  $echex = strrev($echex);
-  if (strlen($echex)%2!=0)
-    $echex='0'.$echex;
-  return $echex;
+	$ch='0123456789ABCDEF';
+	$echex='';
+	while(bccomp($dec,0)==1)
+	{
+		$bdv=(string)bcdiv($dec,'16',0);
+		$bmd=(integer)bcmod($dec,'16',0);
+		$dec=$bdv;
+		$echex.=$ch[$bmd];
+	}
+	$echex = strrev($echex);
+	if (strlen($echex)%2!=0)
+		$echex='0'.$echex;
+	return $echex;
 }
 function isYENTENvalid($addr)
 {
