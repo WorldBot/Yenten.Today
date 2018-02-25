@@ -9,3 +9,4 @@ Free code and others stuff for the Yenten Community
 * Yenten Sigle (initials)
 * Flat Coin logo (blue on grey and white on blue)
 * Be a good Trader
+* Save Our Earth, Adopt Yenten
